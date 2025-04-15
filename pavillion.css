@@ -1,0 +1,239 @@
+/*globaux*/
+body {
+    background-image: url("img/fond-site.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+
+    .titre {
+        background-image: url("img/fond-titre.jpg");
+        font-family: Lora;
+        text-align: center;
+        color: #333333;
+        padding-block: 20px;
+    }
+}
+.roboto{
+    font-family: Roboto;
+}
+.lora{
+    font-family:Lora ;
+}
+.titre-rouge-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    font-family: Roboto;
+    height: 44px;
+    img{
+        height: 44px;
+    }
+    img:last-of-type{
+        rotate: 180deg;
+    }
+    .titre-rouge{
+        background: #c90000;
+        padding-block: 10px;
+        padding-inline: 5px;
+        color: white;
+        margin: 0;
+    }
+}
+.titre-rouge-div::before{
+    content: "";
+    background-image: url("img/left.png");
+    background-size: 20px 44px;
+    height: 44px;
+    width: 20px;
+}
+.titre-rouge-div::after{
+    content: "";
+    background-image: url("img/left.png");
+    background-size: 20px 44px;
+    height: 44px;
+    width: 20px;
+    rotate: 180deg;
+}
+
+
+/*navbar*/
+nav {
+    background: #d3d3d361;
+    display: flex;
+    justify-content: center;
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-size: 0.75em;
+        background: white;
+        margin-inline: 4px;
+        margin-block: 4px;
+        padding-inline: 5px;
+        padding-block: 5px;;
+    }
+}
+
+/*section 1*/
+.S1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .poeme-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .poeme-row{
+        width: 100%;
+    }
+    .poeme-logo{
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    #poeme {
+        background: white;
+        box-shadow: 0px 0px 20px 0px #747474;
+        padding-inline: 10vw;
+        padding-block: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            width: 200px;
+        }
+    }
+    .poeme-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*textes section 2 & 3*/
+.text-moral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        color: red;
+        text-align: center;
+        font-size: 1em;
+    }
+    p{
+        text-align: center;
+        font-size: 0.75em;
+        margin-bottom: 4px;
+        width: 70%;
+    }
+}
+
+/*section 3*/
+.barre-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    img{
+        object-fit: contain;
+    }
+}
+
+/*section 4*/
+.S4{
+    form>*{
+        width: 100%;
+        margin: 0;
+    }
+    form input, textarea{
+        border: #cacaca solid 1px;
+    }
+    input[type="checkbox"],label{
+        width: fit-content;
+    }
+    label{
+        font-size: 0.90em;
+    }
+    form p{
+        font-size: 0.60em;
+    }
+    button{
+        background: red;
+        width: fit-content;
+        color: white;
+        border: none;
+        padding-block: 5px;
+        padding-inline: 5px;
+    }
+    .submit{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*section 5*/
+.S5{
+    margin-bottom: 30px;
+    h2{
+        margin-top: 50px;
+    }
+    .portrait{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    h3{
+        color: red;
+        text-align: center;
+        font-family: Roboto;
+    }
+    p{
+        text-align: center;
+        margin: 0;
+        font-family: Roboto;
+    }
+}
+
+/*section 6*/
+.S6{
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    .barre-client{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        img{
+            object-fit: contain;
+        }
+    }
+}
+
+/*footer*/
+footer{
+    background: #171717;
+    color: #323232;
+    display: flex;
+    justify-content: center;
+    p{
+        margin: 0;
+    }
+    padding-block: 20px;
+}
